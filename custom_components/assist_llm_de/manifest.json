@@ -2,6 +2,7 @@
   "domain": "assist_llm_de",
   "name": "Assist LLM (Deutsch)",
   "after_dependencies": ["conversation", "intent", "llm"],
+  "categories": ["ai_voice.voice_assistants"],
   "codeowners": ["@Melonmain"],
   "config_flow": true,
   "documentation": "https://github.com/Melonmain/HA_LLamaCustomIntegration",
