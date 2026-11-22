@@ -9,5 +9,27 @@
     "abort": {
       "already_configured": "Die Integration ist bereits eingerichtet."
     }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Optionen für Assist LLM (Deutsch)",
+        "description": "Steuert das automatische Zurücksetzen des Gesprächsverlaufs für Konversationen, die Assist (Deutsch) verwenden.",
+        "data": {
+          "reset_history": "Verlauf nach Antwort zurücksetzen",
+          "keep_history_on_followup": "Verlauf bei Rückfragen beibehalten"
+        },
+        "data_description": {
+          "reset_history": "Löscht die abgeschlossene Konversation sofort nach der Antwort, sodass die nächste Anfrage automatisch eine neue Konversations-ID ohne alten Verlauf erhält.",
+          "keep_history_on_followup": "Wenn die Antwort des Assistenten eine Rückfrage ist (z. B. mit einem Fragezeichen endet), bleibt der Verlauf für die Antwort des Nutzers erhalten und wird erst danach zurückgesetzt."
+        }
+      }
+    }
+  },
+  "services": {
+    "clear_conversations": {
+      "name": "Konversationsverlauf leeren",
+      "description": "Löscht sofort alle inaktiven Home-Assistant-Gesprächssitzungen, damit neue Anfragen mit einer frischen Konversations-ID starten."
+    }
   }
 }

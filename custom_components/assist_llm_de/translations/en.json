@@ -9,5 +9,27 @@
     "abort": {
       "already_configured": "Integration is already configured."
     }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Assist LLM (Deutsch) options",
+        "description": "Controls automatic conversation history reset for conversations using Assist (Deutsch).",
+        "data": {
+          "reset_history": "Reset history after response",
+          "keep_history_on_followup": "Keep history for follow-up questions"
+        },
+        "data_description": {
+          "reset_history": "Clears the finished conversation immediately after the response so the next request automatically starts with a new conversation ID and empty history.",
+          "keep_history_on_followup": "If the assistant asks a follow-up question (e.g. ends with a question mark), keeps the history for the user's reply and resets it afterwards."
+        }
+      }
+    }
+  },
+  "services": {
+    "clear_conversations": {
+      "name": "Clear conversation history",
+      "description": "Immediately clears all idle Home Assistant conversation sessions so new requests start with a fresh conversation ID."
+    }
   }
 }
