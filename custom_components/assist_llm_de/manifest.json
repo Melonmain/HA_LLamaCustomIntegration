@@ -1,0 +1,12 @@
+{
+  "domain": "assist_llm_de",
+  "name": "Assist LLM (Deutsch)",
+  "after_dependencies": ["conversation", "intent", "llm"],
+  "codeowners": ["@Melonmain"],
+  "config_flow": true,
+  "documentation": "https://github.com/Melonmain/HA_LLamaCustomIntegration",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/Melonmain/HA_LLamaCustomIntegration/issues",
+  "version": "1.0.0"
+}
